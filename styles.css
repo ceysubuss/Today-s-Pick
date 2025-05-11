@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap');
+
+body{
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ background-color: whitesmoke;
+}
+a{
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+a:hover{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #cacaca;
+  transition: background-color 0.3s ease;
+}
+h1{
+ font-family: 'Lobster', cursive;
+ font-size: 3rem;
+ color: #f23232;
+ text-align: center;
+ margin-top: 1rem;
+}
+
+h2{
+ font-family: 'Lobster', cursive;
+ font-size: 2rem;
+ color:crimson;
+ text-align: center;
+ margin-top: 1rem;
+
+}
+button{
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.5rem;
+ background-color: #ff8a8a;
+ color: white;
+ border-radius: 0.5rem;
+ padding: 0.5rem 1rem;
+ border: none;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+img{
+ 
+  height: 20rem;
+  width: 20rem;
+  border-radius: 75%;
+  margin-top: 1rem;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#result{
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  margin-top: 1rem;
+  background-color: rgb(209, 209, 209);
+}
+button:hover{
+ background-color: #ff5c5c;
+ transform: scale(1.05);
+}
+button:active{
+  background-color: #ff3f3f;
+  transform: scale(0.95);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgb(231, 230, 230);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today's Pick</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <header>
+    <h1>What Should I Do?</h1>
+    <img src="https://i.pinimg.com/736x/59/89/98/598998bc98c50c0f60ee97b12d947b3d.jpg" alt="a-goofy-dog" >
+    <a href="tr.html">Türkçe</a>
+
+    
+  </header>
+  <main>
+    <h2>Feeling undecided? Let us help you pick something fun to do!</h2>
+    <button type="button" onclick="getRandomSuggestion()">Get Random Suggestion</button>
+    <p id="result"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Ceysu Aktaş. All rights reserved.</p>
+    <p>Contact: <a href="mailto:ceysuaktas36@gmail.com">For Suggestion</a>
+    </p>
+  </footer>
+  <script>
+ const suggestions = [
+  "Go for a walk in the park",
+  "Try a new recipe",
+  "Read a book you've been meaning to",
+  "Watch a movie or series",
+  "Start a new hobby or craft",
+  "Call or video chat with a friend",
+  "Visit a local museum or gallery",
+  "Take a day trip to a nearby town",
+  "Try out a new restaurant or cafe",
+  "Do some yoga or meditation",
+  "Write in a journal or start a blog",
+  "Take a break and enjoy a cup of tea or coffee",
+  "Go on a photo walk and capture interesting scenes",
+  "Try a DIY home project or decoration",
+  "Listen to a podcast or audiobook",
+  "Plan a weekend getaway or vacation",
+  "Organize and declutter a space in your home",
+  "Learn something new online (like a language or skill)",
+  "Practice a musical instrument or learn a new song",
+  "Do a random act of kindness for someone",
+  "Start learning a new language",
+  "Join a virtual fitness challenge",
+  "Go for a run or jog in the rain",
+  "Play a sport you haven't played in a while (like soccer, basketball, etc.)",
+  "Take up a new dance style (e.g. hip-hop, salsa, etc.)",
+  "Write a letter to your future self",
+  "Start a 30-day challenge (e.g. drawing, journaling, fitness)",
+  "Create a vision board or mood board for your dreams",
+  "Take an impromptu road trip to explore new places",
+  "Set up a game night with friends or family (even virtually)",
+  "Do something adventurous, like rock climbing or skating",
+  "Play a new video game or revisit an old favorite",
+  "Try out a new workout class or YouTube fitness challenge",
+  "Start a gratitude jar and add a note each day",
+  "Rearrange your furniture for a fresh vibe",
+  "Take an afternoon nap and dream away"
+];
+
+
+    function getRandomSuggestion() {
+      const randomIndex = Math.floor(Math.random() * suggestions.length);
+      document.getElementById("result").innerText = suggestions[randomIndex];
+    }
+    </script>
+</body>
+</html>

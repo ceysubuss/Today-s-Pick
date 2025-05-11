@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bugünün Önerisi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ne Yapmalıyım?</h1>
+    <img src="https://i.pinimg.com/736x/59/89/98/598998bc98c50c0f60ee97b12d947b3d.jpg" alt="komik-bir-kopek">
+    <a href="index.html">English</a>
+
+  </header>
+  <main>
+    <h2>Kararsız mı kaldın? Haydi sana bir öneri bulalım!</h2>
+    <button type="button" onclick="getRandomSuggestion()">Rastgele Öneri Al</button>
+    <p id="result"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 Ceysu Aktaş. Tüm hakları saklıdır.</p>
+    <p>İletişim: <a href="mailto:ceysuaktas36@gmail.com">Öneri İçin Yaz</a></p>
+  </footer>
+  <script>
+const suggestions = [
+  "Parkta yürüyüşe çık",
+  "Yeni bir tarif dene",
+  "Uzun zamandır okumak istediğin bir kitabı oku",
+  "Film veya dizi izle",
+  "Yeni bir hobiye veya el işine başla",
+  "Bir arkadaşınla görüntülü konuş",
+  "Yakındaki bir müzeyi veya galeriyi ziyaret et",
+  "Yakın bir kasabaya günübirlik gezi yap",
+  "Yeni bir kafe ya da restoran dene",
+  "Yoga yap ya da meditasyon yap",
+  "Günlük tut veya blog yazmaya başla",
+  "Bir fincan çay ya da kahve ile mola ver",
+  "Dışarı çık ve ilginç fotoğraflar çek",
+  "Evde DIY (kendin yap) projesi dene",
+  "Bir podcast ya da sesli kitap dinle",
+  "Hafta sonu kaçamağı planla",
+  "Evdeki bir alanı düzenle ve sadeleştir",
+  "Online olarak yeni bir şey öğren (örneğin dil veya beceri)",
+  "Bir enstrüman çal veya yeni bir şarkı öğren",
+  "Birine küçük bir iyilik yap",
+  "Yeni bir dil öğrenmeye başla",
+  "Sanal bir fitness meydan okumasına katıl",
+  "Yağmurda koşuya çık",
+  "Uzun zamandır oynamadığın bir sporu dene (futbol, basketbol vb.)",
+  "Yeni bir dans türü dene (örneğin hip-hop, salsa)",
+  "Gelecekteki kendine mektup yaz",
+  "30 günlük bir meydan okumaya başla (çizim, günlük, spor vb.)",
+  "Hayal tahtası ya da ilham panosu hazırla",
+  "Anlık bir araba yolculuğuna çık ve yeni yerler keşfet",
+  "Arkadaşlarınla oyun gecesi düzenle (istersen çevrim içi)",
+  "Maceralı bir şey yap: tırmanış, paten gibi",
+  "Yeni bir video oyunu oyna ya da eski favorine dön",
+  "Yeni bir egzersiz sınıfı ya da YouTube fitness videosu dene",
+  "Bir şükran kavanozu başlat ve her gün bir not ekle",
+  "Odanın mobilyalarını yeniden düzenle",
+  "Kısa bir öğle uykusu yap ve güzel rüyalar gör"
+];
+
+function getRandomSuggestion() {
+  const randomIndex = Math.floor(Math.random() * suggestions.length);
+  document.getElementById("result").innerText = suggestions[randomIndex];
+}
+  </script>
+</body>
+</html>
